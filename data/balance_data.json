@@ -1,0 +1,317 @@
+{
+  "dungeon_upgrade": {
+    "description": "던전 레벨별 업그레이드 비용 및 성공률",
+    "levels": [
+      {"level": 1, "target": 2, "gold": 10000, "success_rate": 100, "core_destroy_rate": 0},
+      {"level": 2, "target": 3, "gold": 20000, "success_rate": 100, "core_destroy_rate": 0},
+      {"level": 3, "target": 4, "gold": 40000, "success_rate": 97, "core_destroy_rate": 0},
+      {"level": 4, "target": 5, "gold": 70000, "success_rate": 94, "core_destroy_rate": 0},
+      {"level": 5, "target": 6, "gold": 100000, "success_rate": 91, "core_destroy_rate": 0},
+      {"level": 6, "target": 7, "gold": 150000, "success_rate": 88, "core_destroy_rate": 0},
+      {"level": 7, "target": 8, "gold": 220000, "success_rate": 85, "core_destroy_rate": 0},
+      {"level": 8, "target": 9, "gold": 300000, "success_rate": 82, "core_destroy_rate": 0},
+      {"level": 9, "target": 10, "gold": 400000, "success_rate": 79, "core_destroy_rate": 0},
+      {"level": 10, "target": 11, "gold": 500000, "success_rate": 76, "core_destroy_rate": 0},
+      {"level": 11, "target": 12, "gold": 700000, "success_rate": 73, "core_destroy_rate": 0},
+      {"level": 12, "target": 13, "gold": 1000000, "success_rate": 70, "core_destroy_rate": 0},
+      {"level": 13, "target": 14, "gold": 1500000, "success_rate": 67, "core_destroy_rate": 0},
+      {"level": 14, "target": 15, "gold": 2000000, "success_rate": 64, "core_destroy_rate": 0},
+      {"level": 15, "target": 16, "gold": 3000000, "success_rate": 61, "core_destroy_rate": 1},
+      {"level": 16, "target": 17, "gold": 4000000, "success_rate": 58, "core_destroy_rate": 2},
+      {"level": 17, "target": 18, "gold": 5500000, "success_rate": 55, "core_destroy_rate": 3},
+      {"level": 18, "target": 19, "gold": 7000000, "success_rate": 52, "core_destroy_rate": 4},
+      {"level": 19, "target": 20, "gold": 9000000, "success_rate": 49, "core_destroy_rate": 5},
+      {"level": 20, "target": 21, "gold": 12000000, "success_rate": 46, "core_destroy_rate": 6},
+      {"level": 21, "target": 22, "gold": 15000000, "success_rate": 43, "core_destroy_rate": 7},
+      {"level": 22, "target": 23, "gold": 18000000, "success_rate": 40, "core_destroy_rate": 8},
+      {"level": 23, "target": 24, "gold": 22000000, "success_rate": 37, "core_destroy_rate": 9},
+      {"level": 24, "target": 25, "gold": 27000000, "success_rate": 34, "core_destroy_rate": 10},
+      {"level": 25, "target": 26, "gold": 33000000, "success_rate": 31, "core_destroy_rate": 11},
+      {"level": 26, "target": 27, "gold": 40000000, "success_rate": 28, "core_destroy_rate": 12},
+      {"level": 27, "target": 28, "gold": 48000000, "success_rate": 25, "core_destroy_rate": 13},
+      {"level": 28, "target": 29, "gold": 57000000, "success_rate": 22, "core_destroy_rate": 14},
+      {"level": 29, "target": 30, "gold": 67000000, "success_rate": 19, "core_destroy_rate": 15},
+      {"level": 30, "target": 31, "gold": 80000000, "success_rate": 16, "core_destroy_rate": 16}
+    ],
+    "slot_increase": {
+      "monster_per_level": 2,
+      "monster_base": 1,
+      "trap_per_level": 1
+    }
+  },
+
+  "monster_summon": {
+    "description": "몬스터 등급별 소환 비용",
+    "by_grade": {
+      "normal": {"gold": 1000},
+      "advanced": {"gold": 5000},
+      "rare": {"gold": 20000},
+      "hero": {"crystal": 50},
+      "legend": {"crystal": 200},
+      "myth": {"crystal": 1000}
+    }
+  },
+
+  "monster_enhancement": {
+    "description": "몬스터 레벨업 비용 (레벨당)",
+    "cost_formula": "base_cost * current_level",
+    "by_grade": {
+      "normal": {"gold": 500},
+      "advanced": {"gold": 1000},
+      "rare": {"gold": 2000},
+      "hero": {"gold": 5000},
+      "legend": {"gold": 10000},
+      "myth": {"gold": 20000}
+    },
+    "max_level": 50,
+    "stat_increase_per_level": {
+      "hp": 10,
+      "attack": 5,
+      "defense": 3,
+      "speed": 2
+    }
+  },
+
+  "monster_synthesis": {
+    "description": "몬스터 합성 비용 및 성공률",
+    "combinations": [
+      {
+        "from": "normal",
+        "to": "advanced",
+        "required_count": 3,
+        "gold_cost": 10000,
+        "success_rate": 90,
+        "fail_return": "normal"
+      },
+      {
+        "from": "advanced",
+        "to": "rare",
+        "required_count": 3,
+        "gold_cost": 50000,
+        "success_rate": 70,
+        "fail_return": "advanced"
+      },
+      {
+        "from": "rare",
+        "to": "hero",
+        "required_count": 3,
+        "gold_cost": 200000,
+        "success_rate": 50,
+        "fail_return": "rare"
+      },
+      {
+        "from": "hero",
+        "to": "legend",
+        "required_count": 3,
+        "gold_cost": 1000000,
+        "success_rate": 20,
+        "fail_return": "hero"
+      },
+      {
+        "from": "legend",
+        "to": "myth",
+        "required_count": 3,
+        "gold_cost": 10000000,
+        "success_rate": 5,
+        "fail_return": "legend"
+      }
+    ]
+  },
+
+  "trap_installation": {
+    "description": "함정 설치 비용",
+    "by_grade": {
+      "normal": {"gold": 5000},
+      "advanced": {"gold": 12000},
+      "rare": {"gold": 25000},
+      "hero": {"gold": 50000},
+      "legend": {"gold": 100000}
+    }
+  },
+
+  "crystal_gacha": {
+    "description": "크리스탈 뽑기 시스템",
+    "hero_gacha": {
+      "cost": 50,
+      "rates": {
+        "hero": 0.70,
+        "legend": 0.25,
+        "myth": 0.05
+      }
+    },
+    "legend_gacha": {
+      "cost": 200,
+      "rates": {
+        "hero": 0.20,
+        "legend": 0.65,
+        "myth": 0.15
+      }
+    },
+    "myth_gacha": {
+      "cost": 1000,
+      "rates": {
+        "legend": 0.30,
+        "myth": 0.70
+      }
+    }
+  },
+
+  "battle_mechanics": {
+    "description": "전투 관련 수치",
+    "power_calculation": {
+      "monster_stats_weight": {
+        "hp": 0.5,
+        "attack": 2.0,
+        "defense": 1.0,
+        "speed": 0.5
+      },
+      "trap_damage_weight": 1.5,
+      "dungeon_level_bonus_per_level": 50
+    },
+    "placement_bonus": {
+      "front": {"stat": "attack", "multiplier": 1.2},
+      "middle": {"stat": "defense", "multiplier": 1.2},
+      "back": {"stat": "hp", "multiplier": 1.2}
+    },
+    "element_advantage": {
+      "strong": 1.5,
+      "normal": 1.0,
+      "weak": 0.75
+    },
+    "luck_factor": {
+      "min": 0.85,
+      "max": 1.15,
+      "description": "전투 결과에 ±15% 운 요소"
+    }
+  },
+
+  "pvp_system": {
+    "description": "PvP 시스템 수치",
+    "daily_limit": 10,
+    "cooldown_seconds": 60,
+    "win_rate_calculation": "attacker_power / (attacker_power + defender_power)",
+    "level_difference_penalty": {
+      "description": "높은 레벨이 낮은 레벨 공격 시 보상 감소",
+      "difference_1_2": 1.0,
+      "difference_3_5": 0.8,
+      "difference_6_10": 0.6,
+      "difference_11_plus": 0.5
+    }
+  },
+
+  "npc_defense": {
+    "description": "NPC 방어전 시스템",
+    "unlimited_attempts": true,
+    "core_destroy_formula": "5 + (round / 2), max 90%",
+    "cleared_round_locked": true,
+    "power_scaling_per_round": {
+      "description": "라운드당 적 전투력 증가",
+      "rounds_1_10": 500,
+      "rounds_11_20": 2000,
+      "rounds_21_30": 5000,
+      "rounds_31_50": 10000,
+      "rounds_51_70": 20000,
+      "rounds_71_100": 50000
+    }
+  },
+
+  "economy": {
+    "description": "게임 경제 관련 수치",
+    "starting_resources": {
+      "gold": 50000,
+      "crystal": 0
+    },
+    "resource_caps": {
+      "gold": 999999999,
+      "crystal": 99999
+    },
+    "npc_gold_rewards": {
+      "description": "NPC 방어전 골드 보상 공식",
+      "base_reward": 500,
+      "multiplier_per_round": 1.15
+    }
+  },
+
+  "leveling_system": {
+    "description": "계정 레벨 시스템",
+    "exp_per_level_formula": "level * 1000",
+    "max_level": 100,
+    "exp_sources": {
+      "npc_defense_win": 100,
+      "npc_defense_lose": 20,
+      "pvp_win": 50,
+      "pvp_lose": 10,
+      "dungeon_upgrade_success": 200,
+      "dungeon_upgrade_fail": 50,
+      "monster_summon": 10,
+      "monster_synthesis_success": 50,
+      "monster_synthesis_fail": 10
+    }
+  },
+
+  "fame_system": {
+    "description": "명성 시스템",
+    "starting_fame": 0,
+    "fame_sources": {
+      "pvp_win": "depends on opponent power",
+      "pvp_lose": -1,
+      "defense_success": 2,
+      "round_milestone": {
+        "round_10": 10,
+        "round_20": 20,
+        "round_30": 50,
+        "round_50": 100,
+        "round_100": 500
+      }
+    },
+    "fame_ranking_tiers": {
+      "bronze": {"min": 0, "max": 499},
+      "silver": {"min": 500, "max": 999},
+      "gold": {"min": 1000, "max": 2499},
+      "platinum": {"min": 2500, "max": 4999},
+      "diamond": {"min": 5000, "max": 9999},
+      "master": {"min": 10000, "max": 19999},
+      "grandmaster": {"min": 20000, "max": 49999},
+      "legend": {"min": 50000, "max": 999999}
+    }
+  },
+
+  "time_based": {
+    "description": "시간 기반 시스템",
+    "attendance_reset": "00:00 KST daily",
+    "pvp_reset": "00:00 KST daily",
+    "shop_refresh": "00:00 KST daily"
+  },
+
+  "difficulty_scaling": {
+    "description": "난이도 조정",
+    "early_game": {
+      "rounds": "1-10",
+      "upgrade_cost_multiplier": 1.0,
+      "reward_multiplier": 1.0
+    },
+    "mid_game": {
+      "rounds": "11-30",
+      "upgrade_cost_multiplier": 1.2,
+      "reward_multiplier": 1.3
+    },
+    "late_game": {
+      "rounds": "31-50",
+      "upgrade_cost_multiplier": 1.5,
+      "reward_multiplier": 1.8
+    },
+    "end_game": {
+      "rounds": "51+",
+      "upgrade_cost_multiplier": 2.0,
+      "reward_multiplier": 2.5
+    }
+  },
+
+  "gacha_pity_system": {
+    "description": "뽑기 확률 보정 시스템 (향후 구현 예정)",
+    "enabled": false,
+    "hero_gacha_pity": 50,
+    "legend_gacha_pity": 30,
+    "myth_gacha_pity": 10
+  }
+}

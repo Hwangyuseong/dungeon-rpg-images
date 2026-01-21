@@ -1,0 +1,312 @@
+{
+  "attendance_rewards": {
+    "description": "출석 체크 보상 (연속 출석일 기준)",
+    "daily": {
+      "1": {"gold": 1000, "description": "1일차"},
+      "2": {"gold": 1500, "description": "2일차"},
+      "3": {"gold": 2000, "description": "3일차"},
+      "4": {"gold": 2500, "description": "4일차"},
+      "5": {"gold": 3000, "description": "5일차"},
+      "6": {"gold": 4000, "description": "6일차"},
+      "7": {"gold": 10000, "crystal": 5, "description": "7일차 특별 보상!"},
+      "14": {"gold": 20000, "crystal": 10, "description": "14일차 특별 보상!"},
+      "21": {"gold": 50000, "crystal": 20, "description": "21일차 특별 보상!"},
+      "30": {"gold": 100000, "crystal": 50, "description": "30일차 대박 보상!"}
+    }
+  },
+  
+  "pvp_rewards": {
+    "description": "PvP 전투력 구간별 승리 보상",
+    "power_brackets": [
+      {
+        "min_power": 0,
+        "max_power": 1000,
+        "win_gold": 2000,
+        "win_fame": 3,
+        "lose_fame": -1,
+        "difficulty": "★",
+        "description": "초보 구간"
+      },
+      {
+        "min_power": 1001,
+        "max_power": 3000,
+        "win_gold": 5000,
+        "win_fame": 5,
+        "lose_fame": -1,
+        "difficulty": "★★",
+        "description": "초급 구간"
+      },
+      {
+        "min_power": 3001,
+        "max_power": 5000,
+        "win_gold": 10000,
+        "win_fame": 7,
+        "lose_fame": -1,
+        "difficulty": "★★★",
+        "description": "중급 구간"
+      },
+      {
+        "min_power": 5001,
+        "max_power": 10000,
+        "win_gold": 20000,
+        "win_fame": 10,
+        "lose_fame": -1,
+        "difficulty": "★★★★",
+        "description": "고급 구간"
+      },
+      {
+        "min_power": 10001,
+        "max_power": 20000,
+        "win_gold": 50000,
+        "win_fame": 15,
+        "lose_fame": -1,
+        "difficulty": "★★★★★",
+        "description": "상급 구간"
+      },
+      {
+        "min_power": 20001,
+        "max_power": 50000,
+        "win_gold": 100000,
+        "win_fame": 20,
+        "lose_fame": -1,
+        "difficulty": "★★★★★★",
+        "description": "최상급 구간"
+      },
+      {
+        "min_power": 50001,
+        "max_power": 999999999,
+        "win_gold": 300000,
+        "win_fame": 30,
+        "lose_fame": -1,
+        "difficulty": "★★★★★★★★★★",
+        "description": "전설 구간"
+      }
+    ],
+    "defense_success": {
+      "fame": 2,
+      "description": "방어 성공 시 명성 보너스"
+    }
+  },
+  
+  "achievement_rewards": {
+    "description": "업적 달성 보상",
+    "achievements": [
+      {
+        "id": "dungeon_level_5",
+        "name": "던전 마스터 입문",
+        "condition": "던전 레벨 5 달성",
+        "rewards": {"gold": 10000, "crystal": 5},
+        "description": "던전을 레벨 5까지 성장시켰다"
+      },
+      {
+        "id": "dungeon_level_10",
+        "name": "던전 마스터",
+        "condition": "던전 레벨 10 달성",
+        "rewards": {"gold": 50000, "crystal": 10},
+        "description": "던전을 레벨 10까지 성장시켰다"
+      },
+      {
+        "id": "dungeon_level_20",
+        "name": "던전 대마스터",
+        "condition": "던전 레벨 20 달성",
+        "rewards": {"gold": 200000, "crystal": 30},
+        "description": "던전을 레벨 20까지 성장시켰다"
+      },
+      {
+        "id": "dungeon_level_30",
+        "name": "던전 신",
+        "condition": "던전 레벨 30 달성",
+        "rewards": {"gold": 500000, "crystal": 50},
+        "description": "던전을 레벨 30까지 성장시켰다"
+      },
+      {
+        "id": "round_10",
+        "name": "첫 번째 시련 극복",
+        "condition": "라운드 10 클리어",
+        "rewards": {"gold": 20000, "crystal": 5},
+        "description": "라운드 10을 클리어했다"
+      },
+      {
+        "id": "round_20",
+        "name": "중급자의 길",
+        "condition": "라운드 20 클리어",
+        "rewards": {"gold": 50000, "crystal": 10},
+        "description": "라운드 20을 클리어했다"
+      },
+      {
+        "id": "round_30",
+        "name": "고수의 경지",
+        "condition": "라운드 30 클리어",
+        "rewards": {"gold": 100000, "crystal": 20},
+        "description": "라운드 30을 클리어했다"
+      },
+      {
+        "id": "round_50",
+        "name": "전설의 수호자",
+        "condition": "라운드 50 클리어",
+        "rewards": {"gold": 300000, "crystal": 50},
+        "description": "라운드 50을 클리어했다"
+      },
+      {
+        "id": "round_100",
+        "name": "천상과 지옥의 정복자",
+        "condition": "라운드 100 클리어",
+        "rewards": {"gold": 1000000, "crystal": 200},
+        "description": "라운드 100을 클리어했다!"
+      },
+      {
+        "id": "pvp_10_wins",
+        "name": "PvP 입문",
+        "condition": "PvP 10승",
+        "rewards": {"gold": 10000, "crystal": 5},
+        "description": "PvP에서 10승을 거두었다"
+      },
+      {
+        "id": "pvp_50_wins",
+        "name": "PvP 전문가",
+        "condition": "PvP 50승",
+        "rewards": {"gold": 50000, "crystal": 15},
+        "description": "PvP에서 50승을 거두었다"
+      },
+      {
+        "id": "pvp_100_wins",
+        "name": "PvP 마스터",
+        "condition": "PvP 100승",
+        "rewards": {"gold": 150000, "crystal": 30},
+        "description": "PvP에서 100승을 거두었다"
+      },
+      {
+        "id": "pvp_500_wins",
+        "name": "PvP 전설",
+        "condition": "PvP 500승",
+        "rewards": {"gold": 500000, "crystal": 100},
+        "description": "PvP에서 500승을 거두었다"
+      },
+      {
+        "id": "monster_collector_10",
+        "name": "몬스터 수집가",
+        "condition": "몬스터 도감 10종 수집",
+        "rewards": {"gold": 10000, "crystal": 5},
+        "description": "10종류의 몬스터를 수집했다"
+      },
+      {
+        "id": "monster_collector_25",
+        "name": "몬스터 전문가",
+        "condition": "몬스터 도감 25종 수집",
+        "rewards": {"gold": 30000, "crystal": 15},
+        "description": "25종류의 몬스터를 수집했다"
+      },
+      {
+        "id": "monster_collector_50",
+        "name": "몬스터 마스터",
+        "condition": "몬스터 도감 50% 달성",
+        "rewards": {"gold": 100000, "crystal": 50},
+        "description": "도감의 절반을 채웠다"
+      },
+      {
+        "id": "monster_collector_100",
+        "name": "몬스터 도감 완성",
+        "condition": "몬스터 도감 100% 달성",
+        "rewards": {"gold": 500000, "crystal": 200},
+        "description": "모든 몬스터를 수집했다!"
+      },
+      {
+        "id": "synthesis_success_10",
+        "name": "연금술사 입문",
+        "condition": "몬스터 합성 10회 성공",
+        "rewards": {"gold": 20000, "crystal": 5},
+        "description": "합성을 10번 성공했다"
+      },
+      {
+        "id": "synthesis_success_50",
+        "name": "연금술사",
+        "condition": "몬스터 합성 50회 성공",
+        "rewards": {"gold": 100000, "crystal": 20},
+        "description": "합성을 50번 성공했다"
+      },
+      {
+        "id": "synthesis_legend",
+        "name": "전설 합성 성공",
+        "condition": "전설 등급 합성 성공",
+        "rewards": {"gold": 200000, "crystal": 50},
+        "description": "전설 등급 몬스터를 합성했다"
+      },
+      {
+        "id": "synthesis_myth",
+        "name": "신화 탄생",
+        "condition": "신화 등급 합성 성공",
+        "rewards": {"gold": 1000000, "crystal": 200},
+        "description": "신화 등급 몬스터를 탄생시켰다!"
+      },
+      {
+        "id": "gold_millionaire",
+        "name": "백만장자",
+        "condition": "누적 골드 100만 획득",
+        "rewards": {"crystal": 20},
+        "description": "총 100만 골드를 벌었다"
+      },
+      {
+        "id": "gold_multimillionaire",
+        "name": "천만장자",
+        "condition": "누적 골드 1000만 획득",
+        "rewards": {"crystal": 50},
+        "description": "총 1000만 골드를 벌었다"
+      },
+      {
+        "id": "core_survivor",
+        "name": "불굴의 의지",
+        "condition": "코어 파괴 위기에서 생존",
+        "rewards": {"gold": 50000, "crystal": 10},
+        "description": "코어 파괴 위기를 극복했다"
+      },
+      {
+        "id": "core_destroyed_once",
+        "name": "재기의 시작",
+        "condition": "코어 파괴 후 던전 레벨 10 재달성",
+        "rewards": {"gold": 100000, "crystal": 30},
+        "description": "파괴에서 다시 일어섰다"
+      },
+      {
+        "id": "fame_1000",
+        "name": "유명인사",
+        "condition": "명성 1000 달성",
+        "rewards": {"gold": 50000, "crystal": 20},
+        "description": "명성이 1000에 도달했다"
+      },
+      {
+        "id": "fame_5000",
+        "name": "전설의 던전마스터",
+        "condition": "명성 5000 달성",
+        "rewards": {"gold": 200000, "crystal": 50},
+        "description": "명성이 5000에 도달했다"
+      }
+    ]
+  },
+  
+  "first_time_rewards": {
+    "description": "최초 달성 보너스",
+    "first_monster_summon": {"gold": 5000, "description": "첫 몬스터 소환"},
+    "first_trap_install": {"gold": 5000, "description": "첫 함정 설치"},
+    "first_upgrade": {"gold": 10000, "description": "첫 던전 업그레이드"},
+    "first_pvp_win": {"gold": 10000, "crystal": 5, "description": "첫 PvP 승리"},
+    "first_npc_clear": {"gold": 5000, "description": "첫 NPC 방어전 클리어"},
+    "first_synthesis": {"gold": 10000, "description": "첫 몬스터 합성"}
+  },
+  
+  "level_up_rewards": {
+    "description": "계정 레벨업 보상",
+    "per_level": {"gold": 5000, "mana": 100},
+    "milestone_levels": {
+      "10": {"gold": 20000, "crystal": 10, "description": "레벨 10 달성"},
+      "20": {"gold": 50000, "crystal": 20, "description": "레벨 20 달성"},
+      "30": {"gold": 100000, "crystal": 30, "description": "레벨 30 달성"},
+      "50": {"gold": 200000, "crystal": 50, "description": "레벨 50 달성"},
+      "100": {"gold": 500000, "crystal": 100, "description": "레벨 100 달성"}
+    }
+  },
+  
+  "special_event_rewards": {
+    "description": "특별 이벤트 보상 (향후 추가 예정)",
+    "events": []
+  }
+}

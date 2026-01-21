@@ -1,0 +1,35 @@
+{
+  "levels": {
+    "1-5": {
+      "name": "초보 던전",
+      "description": "작은 동굴",
+      "image_url": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/dungeons/dungeon_lv1.png"
+    },
+    "6-10": {
+      "name": "일반 던전",
+      "description": "돌로 만든 던전",
+      "image_url": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/dungeons/dungeon_lv6.png"
+    },
+    "11-15": {
+      "name": "중급 던전",
+      "description": "큰 성",
+      "image_url": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/dungeons/dungeon_lv11.png"
+    },
+    "16-20": {
+      "name": "고급 던전",
+      "description": "마법의 성",
+      "image_url": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/dungeons/dungeon_lv16.png"
+    },
+    "21-30": {
+      "name": "전설 던전",
+      "description": "하늘의 성",
+      "image_url": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/dungeons/dungeon_lv21.png"
+    },
+    "31+": {
+      "name": "신화 던전",
+      "description": "차원의 성",
+      "image_url": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/dungeons/dungeon_lv31.png"
+    }
+  },
+  "default": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/dungeons/default.png"
+}

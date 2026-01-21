@@ -1,0 +1,13 @@
+{
+  "victory": {
+    "normal": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/battles/victory.png",
+    "perfect": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/battles/perfect_victory.png",
+    "close": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/battles/close_victory.png"
+  },
+  "defeat": {
+    "normal": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/battles/defeat.png",
+    "destroyed": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/battles/dungeon_destroyed.png"
+  },
+  "draw": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/battles/draw.png",
+  "default": "https://raw.githubusercontent.com/Hwangyuseong/dungeon-rpg-bot/main/images/battles/default.png"
+}

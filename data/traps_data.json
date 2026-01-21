@@ -1,0 +1,235 @@
+{
+  "traps": [
+    {
+      "id": "spike_basic",
+      "name": "기본 가시 함정",
+      "type": "spike",
+      "grade": "normal",
+      "damage": 100,
+      "install_cost": {
+        "gold": 5000
+      },
+      "effect": "즉시 피해",
+      "description": "바닥에서 튀어나오는 가시",
+      "emoji": "🔱"
+    },
+    {
+      "id": "spike_advanced",
+      "name": "강화 가시 함정",
+      "type": "spike",
+      "grade": "advanced",
+      "damage": 250,
+      "install_cost": {
+        "gold": 12000
+      },
+      "effect": "즉시 피해 + 출혈",
+      "description": "더 날카로운 가시",
+      "emoji": "⚡🔱"
+    },
+    {
+      "id": "poison_basic",
+      "name": "기본 독 함정",
+      "type": "poison",
+      "grade": "normal",
+      "damage": 50,
+      "dot_damage": 30,
+      "dot_duration": 3,
+      "install_cost": {
+        "gold": 5000
+      },
+      "effect": "지속 피해 (3턴)",
+      "description": "독가스를 분사하는 함정",
+      "emoji": "☠️"
+    },
+    {
+      "id": "poison_advanced",
+      "name": "맹독 함정",
+      "type": "poison",
+      "grade": "advanced",
+      "damage": 100,
+      "dot_damage": 70,
+      "dot_duration": 5,
+      "install_cost": {
+        "gold": 15000
+      },
+      "effect": "강력한 지속 피해 (5턴)",
+      "description": "치명적인 독가스",
+      "emoji": "☠️💀"
+    },
+    {
+      "id": "freeze_basic",
+      "name": "기본 빙결 함정",
+      "type": "freeze",
+      "grade": "normal",
+      "damage": 80,
+      "freeze_duration": 1,
+      "install_cost": {
+        "gold": 8000
+      },
+      "effect": "1턴 이동 불가",
+      "description": "적을 얼려버리는 함정",
+      "emoji": "❄️"
+    },
+    {
+      "id": "freeze_advanced",
+      "name": "극한 빙결 함정",
+      "type": "freeze",
+      "grade": "advanced",
+      "damage": 180,
+      "freeze_duration": 2,
+      "install_cost": {
+        "gold": 18000
+      },
+      "effect": "2턴 이동 불가 + 방어력 감소",
+      "description": "강력한 냉기",
+      "emoji": "❄️⛄"
+    },
+    {
+      "id": "lightning_basic",
+      "name": "기본 번개 함정",
+      "type": "lightning",
+      "grade": "normal",
+      "damage": 200,
+      "install_cost": {
+        "gold": 10000
+      },
+      "effect": "강력한 즉시 피해",
+      "description": "번개로 적을 공격",
+      "emoji": "⚡"
+    },
+    {
+      "id": "lightning_advanced",
+      "name": "천둥 함정",
+      "type": "lightning",
+      "grade": "rare",
+      "damage": 450,
+      "chain_targets": 2,
+      "install_cost": {
+        "gold": 25000
+      },
+      "effect": "강력한 피해 + 연쇄 공격",
+      "description": "여러 적에게 연쇄 피해",
+      "emoji": "⚡🌩️"
+    },
+    {
+      "id": "fire_basic",
+      "name": "기본 화염 함정",
+      "type": "fire",
+      "grade": "normal",
+      "damage": 150,
+      "aoe_range": 1,
+      "install_cost": {
+        "gold": 8000
+      },
+      "effect": "소규모 광역 피해",
+      "description": "불꽃을 뿜어내는 함정",
+      "emoji": "🔥"
+    },
+    {
+      "id": "fire_advanced",
+      "name": "지옥불 함정",
+      "type": "fire",
+      "grade": "rare",
+      "damage": 350,
+      "aoe_range": 2,
+      "dot_damage": 50,
+      "dot_duration": 3,
+      "install_cost": {
+        "gold": 30000
+      },
+      "effect": "광역 피해 + 화상",
+      "description": "지옥의 불꽃",
+      "emoji": "🔥💥"
+    },
+    {
+      "id": "slow_basic",
+      "name": "기본 둔화 함정",
+      "type": "slow",
+      "grade": "normal",
+      "damage": 50,
+      "slow_rate": 0.5,
+      "slow_duration": 2,
+      "install_cost": {
+        "gold": 6000
+      },
+      "effect": "속도 50% 감소 (2턴)",
+      "description": "적의 이동을 방해",
+      "emoji": "🐌"
+    },
+    {
+      "id": "slow_advanced",
+      "name": "수렁 함정",
+      "type": "slow",
+      "grade": "advanced",
+      "damage": 100,
+      "slow_rate": 0.7,
+      "slow_duration": 4,
+      "install_cost": {
+        "gold": 14000
+      },
+      "effect": "속도 70% 감소 (4턴)",
+      "description": "움직임을 크게 제한",
+      "emoji": "🐌💨"
+    },
+    {
+      "id": "stun_basic",
+      "name": "기본 기절 함정",
+      "type": "stun",
+      "grade": "rare",
+      "damage": 120,
+      "stun_duration": 1,
+      "install_cost": {
+        "gold": 20000
+      },
+      "effect": "1턴 행동 불가",
+      "description": "적을 기절시킴",
+      "emoji": "💫"
+    },
+    {
+      "id": "stun_advanced",
+      "name": "충격 함정",
+      "type": "stun",
+      "grade": "hero",
+      "damage": 250,
+      "stun_duration": 2,
+      "install_cost": {
+        "gold": 50000
+      },
+      "effect": "2턴 행동 불가",
+      "description": "강력한 충격으로 기절",
+      "emoji": "💫⚡"
+    },
+    {
+      "id": "combo_fire_poison",
+      "name": "화독 복합 함정",
+      "type": "fire",
+      "grade": "hero",
+      "damage": 300,
+      "aoe_range": 2,
+      "dot_damage": 100,
+      "dot_duration": 5,
+      "install_cost": {
+        "gold": 60000
+      },
+      "effect": "광역 피해 + 독 지속 피해",
+      "description": "불과 독의 조합",
+      "emoji": "🔥☠️"
+    },
+    {
+      "id": "ultimate_trap",
+      "name": "궁극의 함정",
+      "type": "lightning",
+      "grade": "legend",
+      "damage": 800,
+      "aoe_range": 3,
+      "stun_duration": 2,
+      "chain_targets": 3,
+      "install_cost": {
+        "gold": 100000
+      },
+      "effect": "광역 + 연쇄 + 기절",
+      "description": "모든 효과를 가진 최강 함정",
+      "emoji": "⚡💥🌩️"
+    }
+  ]
+}
